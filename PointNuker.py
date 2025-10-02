@@ -106,8 +106,8 @@ APP_DIR = os.path.dirname(os.path.abspath(__file__))
 PROFILE_PATH = os.path.join(APP_DIR, "pointnuker_profile.json")
 
 DEFAULT_PROFILE = {
-    "dbscan_eps": 0.03,
-    "dbscan_min_points": 30,
+    "dbscan_eps": 1.50,
+    "dbscan_min_points": 50,
     "auto_apply_cluster": False,
     "orientation_preset": "none",   # "none" | "flip_x_180" | "swap_yz"
     "auto_apply_orientation": False,
@@ -403,13 +403,6 @@ class PointNukerApp(tk.Tk):
         ).pack(side="left", padx=8)
         ttk.Button(box_auto, text="Auto-suggest params (kNN)", command=self.autosuggest_params).pack(side="left", padx=8)
 
-        # Info card (community)
-        info = ttk.LabelFrame(mode2, text="Open-source Notice", padding=8)
-        info.pack(fill="x", pady=6)
-        ttk.Label(
-            info,
-            text="This is open-source software intended for the Radiance Fields community."
-        ).pack(side="left", padx=8, pady=2)
 
         # Logs area (bottom)
         logf = ttk.LabelFrame(self, text="Process console / Log")
