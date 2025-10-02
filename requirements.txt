@@ -1,0 +1,4 @@
+open3d
+plyfile
+numpy
+ttkbootstrap  # optional (for modern UI theme)
