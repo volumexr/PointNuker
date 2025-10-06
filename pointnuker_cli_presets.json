@@ -1,0 +1,22 @@
+{
+  "remove_10pct": {
+    "radius_outlier": true,
+    "radius_nb": 2,
+    "radius": 0.05
+  },
+  "remove_20pct": {
+    "radius_outlier": true,
+    "radius_nb": 3,
+    "radius": 0.025
+  },
+  "remove_30pct": {
+    "radius_outlier": true,
+    "radius_nb": 4,
+    "radius": 0.018
+  },
+  "remove_40pct": {
+    "radius_outlier": true,
+    "radius_nb": 5,
+    "radius": 0.0145
+  }
+}
